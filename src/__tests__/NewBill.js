@@ -56,7 +56,7 @@ describe("Given I am connected as an employee on NewBill Page", () => {
 
       fireEvent.change(fileInput, { target: { files: [validFile] } });
 
-      await waitFor(() => expect(newBill.fileName).not.toBe("")); // Ensure file name is updated
+      await waitFor(() => expect(newBill.fileName).not.toBe(""));
       await waitFor(() => expect(newBill.fileName).toBe("file.png"));
     });
 
@@ -159,7 +159,6 @@ describe("Given I am a user connected as Employee", () => {
       });
 
       expect(result).toEqual({ id: "12345" });
-      expect(mockStore.bills().create).toHaveBeenCalled;
     });
 
     describe("When an error occurs on API", () => {
