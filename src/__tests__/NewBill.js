@@ -131,7 +131,7 @@ describe("Given I am connected as an employee on NewBill Page", () => {
     });
   });
 });
-
+//Test d'intégration POST
 describe("Given I am a user connected as Employee", () => {
   describe("When I submit a new bill", () => {
     test("create a new bill from mock API POST", async () => {

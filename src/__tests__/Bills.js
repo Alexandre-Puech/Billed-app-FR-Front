@@ -66,7 +66,7 @@ describe("Given I am connected as an employee", () => {
       const newBillButton = screen.getByTestId("btn-new-bill");
       newBillButton.click();
       const newBillForm = screen.getByTestId("form-new-bill");
-      expect(newBillForm).toBeInTheDocument; //trouver la bonne fonction
+      expect(newBillForm).toBeInTheDocument;
     });
     test("Then, when I click on the icon eye, the modal should open", async () => {
       Object.defineProperty(window, "localStorage", {
